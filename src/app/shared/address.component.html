@@ -1,0 +1,14 @@
+<strong>Address</strong>
+<fieldset *ngIf="addressForm" class="flex gap-5 flex-col border border-1 rounded-lg p-5" [formGroup]="addressForm">
+  <div class="flex flex-col">
+    <label for="street">Street</label>
+    <input formControlName="city" id="street" class="border border-1 border-gray-200 shadow-lg p-2 rounded-lg"
+           type="text"/>
+  </div>
+
+  <div class="flex flex-col">
+    <label for="city">Whatever</label>
+    <input formControlName="city" id="city" class="border border-1 border-gray-200 shadow-lg p-2 rounded-lg"
+           type="text"/>
+  </div>
+</fieldset>

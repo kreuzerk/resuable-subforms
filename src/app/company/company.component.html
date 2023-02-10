@@ -1,0 +1,15 @@
+<form class="flex gap-5 flex-col" [formGroup]="companyForm">
+  <div class="flex flex-col">
+    <label for="name">Name</label>
+    <input formControlName="name" id="name" class="border border-1 border-gray-200 shadow-lg p-2 rounded-lg"
+           type="text"/>
+  </div>
+
+  <address></address>
+  <!--
+  <button class="bg-blue-700 text-white p-2 rounded-2xl">Submit</button>
+  -->
+
+  {{ companyForm.value | json }}
+
+</form>
